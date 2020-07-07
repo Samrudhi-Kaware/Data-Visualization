@@ -1,0 +1,15 @@
+import numpy as np
+import matplotlib.pyplot as plt
+ages = np.arange(18, 30)
+salaries_python = np.random.randint(20, 80, size=len(ages))
+salaries_ml = np.random.randint(40, 120, size=len(ages))
+# print(ages)
+# print(salaries_python)
+plt.plot(ages, salaries_python, label="Python", color="red")
+plt.plot(ages, salaries_ml, label="ML", color="green")
+plt.legend()
+plt.title('Ages vs Salaries')
+plt.xlabel('Ages')
+plt.ylabel('Salaries')
+plt.tight_layout()
+plt.show()
